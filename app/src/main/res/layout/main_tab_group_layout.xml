@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.dearzou.headline.MainActivity">
+
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#555" />
+
+    <com.dearzou.headline.widget.WechatRadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <com.dearzou.headline.widget.WechatRadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:checked="true"
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:text="微信"
+            android:textColor="#555"
+            android:textSize="13sp"
+            app:defocus_icon="@drawable/chats"
+            app:focus_color="#50ba26"
+            app:focus_icon="@drawable/chats_green"
+            app:icon_height="25dp"
+            app:icon_width="25dp" />
+
+        <com.dearzou.headline.widget.WechatRadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:text="通讯录"
+            android:textColor="#555"
+            android:textSize="13sp"
+            app:defocus_icon="@drawable/contacts"
+            app:focus_color="#50ba26"
+            app:focus_icon="@drawable/contacts_green"
+            app:icon_height="25dp"
+            app:icon_width="25dp" />
+
+        <com.dearzou.headline.widget.WechatRadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:text="发现"
+            android:textColor="#555"
+            android:textSize="13sp"
+            app:defocus_icon="@drawable/discover"
+            app:focus_color="#50ba26"
+            app:focus_icon="@drawable/discover_green"
+            app:icon_height="25dp"
+            app:icon_width="25dp" />
+
+        <com.dearzou.headline.widget.WechatRadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:text="我"
+            android:textColor="#555"
+            android:textSize="13sp"
+            app:defocus_icon="@drawable/about_me"
+            app:focus_color="#50ba26"
+            app:focus_icon="@drawable/about_me_green"
+            app:icon_height="25dp"
+            app:icon_width="25dp" />
+    </com.dearzou.headline.widget.WechatRadioGroup>
+
+
+
+</LinearLayout>
