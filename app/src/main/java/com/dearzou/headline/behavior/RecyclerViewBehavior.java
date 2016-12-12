@@ -81,5 +81,9 @@ public class RecyclerViewBehavior extends CoordinatorLayout.Behavior {
         public void onAnimationCancel(View arg0) {
             isAnimatingOut = false;
         }
+
+
     };
+
+
 }
