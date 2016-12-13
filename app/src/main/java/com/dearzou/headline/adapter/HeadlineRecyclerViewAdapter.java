@@ -14,14 +14,14 @@ import java.util.List;
  * Created by ZouZhen on 2016/12/11.
  */
 
-public class HeadlineRecyclerViewAdapter extends RecyclerView.Adapter<HeadlineRecyclerViewAdapter.HeadlineViewHolder>{
+public class HeadlineRecyclerViewAdapter extends RecyclerView.Adapter<HeadlineRecyclerViewAdapter.HeadlineViewHolder> {
 
 
     private List<String> mDatas;
 
     private int mLayoutResource;
 
-    public HeadlineRecyclerViewAdapter(List<String> list,int layoutResource){
+    public HeadlineRecyclerViewAdapter(List<String> list, int layoutResource) {
 
         mDatas = list;
         mLayoutResource = layoutResource;

@@ -15,7 +15,7 @@ public class HeadlineViewPagerAdapter extends FragmentPagerAdapter {
     private List<Fragment> mFragments;
 
 
-    public HeadlineViewPagerAdapter(FragmentManager fm,List<Fragment> fragments) {
+    public HeadlineViewPagerAdapter(FragmentManager fm, List<Fragment> fragments) {
         super(fm);
         mFragments = fragments;
     }

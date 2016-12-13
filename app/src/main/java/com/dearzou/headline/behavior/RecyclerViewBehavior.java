@@ -14,7 +14,9 @@ import android.view.ViewGroup;
 
 public class RecyclerViewBehavior extends CoordinatorLayout.Behavior {
 
-    /**动画是否正在执行*/
+    /**
+     * 动画是否正在执行
+     */
     private boolean isAnimatingOut = false;
 
     private OnStateChangedListener mOnStateChangedListener;
@@ -30,12 +32,12 @@ public class RecyclerViewBehavior extends CoordinatorLayout.Behavior {
 
     @Override
     public void onNestedScroll(CoordinatorLayout coordinatorLayout, View child, View target, int dxConsumed, int dyConsumed, int dxUnconsumed, int dyUnconsumed) {
-        if ((dyConsumed > 0 || dyUnconsumed > 0) ) {//往下滑
+        if ((dyConsumed > 0 || dyUnconsumed > 0)) {//往下滑
 
             if (mOnStateChangedListener != null) {
                 mOnStateChangedListener.onChanged(false);
             }
-        } else if ((dyConsumed < 0 || dyUnconsumed < 0) ) {
+        } else if ((dyConsumed < 0 || dyUnconsumed < 0)) {
 
             if (mOnStateChangedListener != null) {
                 mOnStateChangedListener.onChanged(true);

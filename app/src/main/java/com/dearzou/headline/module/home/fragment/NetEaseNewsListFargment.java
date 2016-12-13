@@ -59,19 +59,18 @@ public class NetEaseNewsListFargment extends BaseHomeFragment {
 
                 if (isShow) {
 
-                    AnimationHelper.topLayOutShow(mContext,mContext.getmTopLayOut());
-                    AnimationHelper.bottomLayOutShow(mContext,mContext.getmBottomLayOut());
+                    AnimationHelper.topLayOutShow(mContext, mContext.getmTopLayOut());
+                    AnimationHelper.bottomLayOutShow(mContext, mContext.getmBottomLayOut());
 
-                }else{
+                } else {
 
 
-                    AnimationHelper.topLayOutHide(mContext,mContext.getmTopLayOut());
-                    AnimationHelper.bottomLayOutHide(mContext,mContext.getmBottomLayOut());
+                    AnimationHelper.topLayOutHide(mContext, mContext.getmTopLayOut());
+                    AnimationHelper.bottomLayOutHide(mContext, mContext.getmBottomLayOut());
 
                 }
             }
         });
-
     }
 
 

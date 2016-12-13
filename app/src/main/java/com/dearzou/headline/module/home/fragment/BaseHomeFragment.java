@@ -35,13 +35,13 @@ public class BaseHomeFragment extends BaseFragment {
         mContext = (MainActivity) getActivity();
     }
 
-    protected List<String> getTestData(){
+    protected List<String> getTestData() {
 
         List<String> list = new ArrayList<String>();
 
-        for (int i =0;i<300;i++){
+        for (int i = 0; i < 300; i++) {
 
-            list.add(i+"");
+            list.add(i + "");
 
         }
         return list;
